@@ -1,0 +1,55 @@
+.burger_btn {
+  cursor: pointer;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: linear-gradient(90deg, rgba(158, 240, 26, 1) 0%, rgba(255, 234, 0, 1) 100%);
+
+  &__line {
+    position: relative;
+    width: 2.6rem;
+    height: 0.2rem;
+
+    border-radius: 1rem;
+    background: var(--background-color-primary);
+    transition: all var(--transition);
+
+    &:before,
+    &:after {
+      position: absolute;
+      content: "";
+      width: 2.6rem;
+      height: 0.2rem;
+
+      transition: all var(--transition);
+      border-radius: 1rem;
+      background: var(--background-color-primary);
+    }
+
+    &:before {
+      transform: translateY(-.7rem);
+    }
+
+    &:after {
+      transform: translateY(.7rem);
+    }
+
+    &.active {
+      transform: translateX(-5rem);
+      background: transparent;
+
+      &:before {
+        transform: rotate(45deg) translate(3.5rem, -3.5rem);
+      }
+
+      &:after {
+        transform: rotate(-45deg) translate(3.5rem, 3.5rem);
+      }
+    }
+  }
+}

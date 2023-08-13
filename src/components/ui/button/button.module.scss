@@ -1,0 +1,19 @@
+.button{
+  height: 4rem;
+  padding: 0 2rem;
+
+  border: none;
+  border-radius: 2rem;
+  background: linear-gradient(90deg, #FF7B4E 0%, #FF584E 100%);
+
+  color: white;
+
+  outline: none;
+  cursor: pointer;
+
+  transition: all var(--transition) ;
+
+   &:hover{
+    box-shadow: 0px 0px 16px 3px rgba(255,123,78,1);
+  }
+}

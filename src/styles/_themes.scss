@@ -1,0 +1,29 @@
+:root {
+  // body color
+  --background-color-primary: #ffffff;
+  --background-color-secondary: #1B4D4B;
+  --background-color-third: #333333;
+  --background-color-accent: #F1F7FB;
+
+  //font
+  --font_root_size: 10px;
+
+  //font color
+  --font-color-primary: #000000;
+  --font-color-secondary: #808080;
+  --font-color-third: #4D4D4D;
+
+  //button color
+  --color-orange: #ec7d10;
+  --color-blue: #3E7CB1;
+  --color-dark-green: #009245;
+  --color-green: #2FB821;
+
+  //border color
+  --border-color-primary: #BDE1ED;
+  --border-color-secondary: #D3E1E5;
+  --border-color-error: #FF7E76;
+
+  //transition
+  --transition:  0.25s ease-in-out;
+}

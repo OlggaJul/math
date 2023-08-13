@@ -1,0 +1,59 @@
+.free {
+  margin-bottom: 4rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+
+  @include laptop {
+    display: block;
+  }
+
+  &__inner {
+    padding: 2rem;
+    border-radius: 2.5rem;
+
+    background-color: #EFF2FD;
+
+    @include laptop {
+      height: 24rem;
+    }
+  }
+
+  &__pic {
+    display: flex;
+    justify-content: center;
+
+    @include laptop {
+      position: absolute;
+      bottom: 1rem;
+    }
+  }
+
+  &__content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    font-size: 1.8rem;
+
+    @include laptop {
+      margin-left: 30rem;
+    }
+  }
+
+  &__info_title {
+    color: var(--color-dark-green);
+    font-size: 3.2rem;
+    font-weight: 700;
+  }
+
+  &__contacts {
+    display: grid;
+
+    @include laptop {
+      justify-content: end;
+    }
+  }
+}
