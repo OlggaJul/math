@@ -8,11 +8,8 @@ const HomePage: FC = () => {
   return (
     <section>
       <FirstScreen />
-
       <Free />
-
       <Advantages />
-
       <Formats />
     </section>
   )
