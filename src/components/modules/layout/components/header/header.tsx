@@ -3,7 +3,6 @@ import React, { FC } from 'react'
 import styles from './header.module.scss'
 import { Button } from '@/components/ui/button'
 import { Logo } from '@/components/ui/logo'
-import { Link } from 'react-router-dom'
 
 const Header: FC = () => {
   return (
@@ -15,9 +14,9 @@ const Header: FC = () => {
 
         <div className={styles.header__contacts}>
           <Button>
-            <Link target={'_blank'} to={'https://forms.gle/5kcWSg1Vvc53PBkk9'}>
+            <a target={'_blank'}  rel="noreferrer" href={'https://forms.gle/5kcWSg1Vvc53PBkk9'}>
               Залишити заявку
-            </Link>
+            </a>
           </Button>
         </div>
       </div>

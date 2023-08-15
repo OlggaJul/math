@@ -1,11 +1,13 @@
-import React from 'react'
-import styles from './page.module.css'
+import React, { FC } from 'react'
 import { HomePage } from '@/components/modules/home-page'
 
-export default function Home() {
+
+const Home:FC =() =>{
   return (
-    <main className={styles.main}>
-      <HomePage />
+    <main>
+     <HomePage />
     </main>
   )
 }
+
+export default Home
