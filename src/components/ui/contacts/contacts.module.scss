@@ -1,22 +1,32 @@
-.contacts{
+.contacts {
   display: flex;
   align-items: center;
   gap: 2rem;
 
-  &__social{
+  &__social {
     display: flex;
     gap: 2rem;
   }
 
-  &__telega{
+  &__telega {
+    display: block;
     cursor: pointer;
-    & svg{
+
+    & svg {
       width: 4rem;
       height: 4rem;
+
+      transition: all var(--transition);
+    }
+
+    @include hover{
+      & svg{
+        filter: drop-shadow(0 0 1.2rem rgba(#2F89CE,1));
+      }
     }
   }
 
-  &__viber{
+  &__viber {
     width: 4rem;
     height: 4rem;
     display: flex;
@@ -26,7 +36,7 @@
     border-radius: 50%;
     cursor: pointer;
 
-    & svg{
+    & svg {
 
       fill: white;
       width: 3rem;

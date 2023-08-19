@@ -4,10 +4,17 @@
   width: 100%;
   background: linear-gradient(315deg, #009245 0%, #2FB821 100%);
 
-  &__container{
+  &__container {
+    height: 100%;
     padding: 1rem 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    font-size: 2.8rem;
+    color: white;
+
+    & div{
+      text-align: center;
+    }
   }
 }

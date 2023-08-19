@@ -1,8 +1,8 @@
 'use client'
 import React, { FC } from 'react'
 import styles from './header.module.scss'
-import { Button } from '@/components/ui/button'
 import { Logo } from '@/components/ui/logo'
+import { Contacts } from '@/components/ui/contacts'
 
 const Header: FC = () => {
   return (
@@ -13,11 +13,7 @@ const Header: FC = () => {
         </div>
 
         <div className={styles.header__contacts}>
-          <Button>
-            <a target={'_blank'}  rel="noreferrer" href={'https://forms.gle/5kcWSg1Vvc53PBkk9'}>
-              Залишити заявку
-            </a>
-          </Button>
+          <Contacts />
         </div>
       </div>
     </div>

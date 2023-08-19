@@ -10,7 +10,7 @@
     width: 100%;
     background: linear-gradient(315deg, #2FB821 0%, #009245 100%);
 
-    @include tablet {
+    @include laptop {
       height: 80rem;
       clip-path: polygon(100% 0, 100% 73%, 50% 100%, 0 73%, 0 0);
       background: linear-gradient(315deg, #2FB821 0%, #009245 100%);

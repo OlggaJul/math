@@ -1,0 +1,83 @@
+.about {
+  position: relative;
+  margin-bottom: 4rem;
+
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+
+  border-radius: 2.5rem;
+  background-color: var(--background-color-accent);
+
+  @include laptop {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__image {
+    position: relative;
+    z-index: 2;
+    max-width: 40rem;
+    overflow: hidden;
+    border-radius: 2.5rem;
+  }
+
+  &__circle1 {
+    position: absolute;
+    top: calc(50% - 18rem);
+    left: 0;
+    opacity: 0.7;
+    color: var(--color-orange);
+
+    @include laptop {
+      top: calc(50% - 18rem);
+      left: 38rem;
+    }
+
+    & svg {
+      width: 35rem;
+      height: 35rem;
+    }
+  }
+
+  &__circle2 {
+    position: absolute;
+    bottom: 2rem;
+    right: 5rem;
+    opacity: 0.7;
+
+    & svg {
+      color: var(--color-green);
+      width: 25rem;
+      height: 25rem;
+    }
+  }
+
+  &__info {
+    position: relative;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: rgba(#000000, 0.8);
+  }
+
+  &__fact {
+    display: flex;
+    gap: 1rem;
+
+    &:not(:last-child) {
+
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__point {
+    margin-top: 0.7rem;
+    flex-shrink: 0;
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--color-green);
+    border-radius: 50%;
+  }
+}
